@@ -46,9 +46,8 @@ export default function PrepScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
+    padding: 21,
+    marginTop: 160
   },
   questionStyle: {
     color: 'white',
