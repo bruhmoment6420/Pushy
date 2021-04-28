@@ -10,7 +10,7 @@ export default function FailureScreen({ navigation, route }) {
       <Text style={styles.header}>Try Harder</Text>
       <Text style={styles.otherText}>You failed to do {amount} pushups</Text>
       <Text style={styles.otherText}>You only did {amountCompleted} pushups</Text>
-      <Button style={{ marginTop: 12 }}onPress={() => navigation.navigate('Pushup Helper')}>Go To Home</Button>
+      <Button style={{ marginTop: 12 }} onPress={() => navigation.navigate('Pushup Helper')}>Go To Home</Button>
     </View>
   )
 }

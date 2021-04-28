@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
-import { TouchableRipple, Button, Portal, Dialog, Paragraph } from 'react-native-paper'
+import { TouchableRipple, Button } from 'react-native-paper'
 
 export default function PushupScreen({ navigation, route }) {
   const [pushups, setPushups] = useState(0)
@@ -8,10 +8,9 @@ export default function PushupScreen({ navigation, route }) {
   const { amount } = route.params
 
   const handlePress = () => {
-    if (pushups < amount) {
+    if (pushups < amount - 1) {
       setPushups((prev) => prev + 1)
     } else {
-      console.log('Gains Earned')
       navigation.navigate('Success', { amount: amount })
     }
   }
